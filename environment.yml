@@ -1,0 +1,8 @@
+name: grb_mcmc
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -e .[plot,dev,models]

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grb-mcmc"
+version = "0.2.0"
+description = "Model-agnostic MCMC fitting and synthetic recovery experiments for GRB light curves"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Oliver Rupp"}]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "emcee>=3.1", "h5py>=3.8"]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.7"]
+dev = ["pytest>=7"]
+afterglow = ["afterglowpy==0.8.1"]
+vegas = ["VegasAfterglow==2.0.6"]
+pyfrs = ["PyFRS==0.1.0.2", "astropy>=5"]
+models = ["afterglowpy==0.8.1", "VegasAfterglow==2.0.6", "PyFRS==0.1.0.2", "astropy>=5"]
+
+[project.scripts]
+grb-mcmc = "grb_mcmc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

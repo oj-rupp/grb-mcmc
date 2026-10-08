@@ -1,0 +1,21 @@
+{
+  "fit_model": "toy",
+  "production_steps": 1000,
+  "autocorr_length_check_passed": false,
+  "autocorr_time": null,
+  "estimated_effective_samples": null,
+  "mean_acceptance_fraction": 0.7174431818181819,
+  "max_log_posterior": 6.2991781482664635,
+  "parameters": {
+    "log_amplitude": {
+      "median": 0.0003794828452422776,
+      "errlo": 0.0085226279112191,
+      "errhi": 0.0076964292366401895
+    },
+    "alpha": {
+      "median": 1.1964430610016232,
+      "errlo": 0.009751919596822978,
+      "errhi": 0.009498747530791052
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "FIT_MODEL": "gs02_smooth",
+  "GENERATOR_MODEL": "gs02_smooth",
+  "FREE_PARAMS": {
+    "p": 2.45,
+    "log_n_0": -1.5,
+    "log_E52": 0.1
+  },
+  "FIXED_PARAMS": {
+    "log_eps_e": -1.0,
+    "log_eps_B": -3.0,
+    "z": 1.0,
+    "dL28": 2.09,
+    "thetaCore": 0.5,
+    "thetaObs": 0.0,
+    "Gamma0": 300.0,
+    "xi_N": 1.0
+  },
+  "TRUE_PARAMS": {
+    "p": 2.5,
+    "log_E52": 0.0
+  },
+  "PRIORS": {
+    "p": [
+      2.05,
+      3.2
+    ],
+    "log_n_0": [
+      -3.0,
+      1.0
+    ],
+    "log_E52": [
+      -1.0,
+      2.0
+    ]
+  },
+  "BANDS": [
+    [
+      "optical",
+      460000000000000.0,
+      0.3,
+      3.0,
+      12
+    ],
+    [
+      "radio",
+      10000000000.0,
+      0.3,
+      3.0,
+      12
+    ]
+  ],
+  "NWALKERS": 16,
+  "BURN_STEPS": 100,
+  "STEPS": 500,
+  "SEED": 42,
+  "WORKERS": 1,
+  "PROGRESS": false,
+  "GENERATE_DATA": true,
+  "LIKELIHOOD": "linear_flux",
+  "FRACTIONAL_ERROR": 0.1,
+  "DATA_FILENAME": "../runs/gs02/observations.npz",
+  "SAMPLES_FILENAME": "../runs/gs02/samples.h5",
+  "FIT_MODELS": [
+    "gs02_smooth",
+    "afterglowpy",
+    "VegasAfterglow",
+    "PyFRS"
+  ],
+  "SWEEP_PARAMS": {
+    "log_n_0": [
+      -2.0,
+      -1.0
+    ],
+    "log_E52": [
+      0.0,
+      1.0
+    ]
+  }
+}
