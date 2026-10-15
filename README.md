@@ -195,19 +195,6 @@ than silently excluding them. It does not automatically run missing jobs.
 The collector's `chi2_at_max_posterior` is the sum of squared standardized
 residuals at the best saved posterior sample. It is not Bayesian evidence.
 
-## Diagnostics and scope
-
-Summaries report 16th/50th/84th percentiles, acceptance fraction and, when
-estimable, autocorrelation times. `autocorr_length_check_passed` requires
-production length at least 50 times every estimated autocorrelation time.
-This is a heuristic length check, not proof of convergence. Inspect trace
-plots, compare independent runs, and check stability as runs are extended.
-See the [emcee autocorrelation tutorial](https://emcee.readthedocs.io/en/stable/tutorials/autocorr/).
-
-See [analysis and plotting](docs/analysis.md), [model conventions](docs/models.md),
-[second cleanup migration](docs/migration-v2.md), and [validation](docs/validation.md).
-The [first-cleanup migration](docs/migration.md) is retained as historical context.
-
 ## Physical-model quickstart
 
 GS02 needs no extra engine. Other wrappers are optional:
