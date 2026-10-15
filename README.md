@@ -121,7 +121,7 @@ a uniform prior on `log_E52` is a log-uniform prior on `E52`.
 
 Save one set of arrays per band. Different bands may have different lengths
 and irregular sampling. Time is in days, frequency in Hz, and flux and its
-1-$\sigma$ uncertainty in mJy:
+$1\sigma$ uncertainty in mJy:
 
 ```python
 import numpy as np
